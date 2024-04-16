@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+deneme1,org.example,CoffeeMaker,3,97,2,8,2,24,2,11,0,8
+deneme1,org.example,Inventory,0,258,4,22,0,89,4,25,0,16
+deneme1,org.example,Main,433,0,46,0,141,0,34,0,11,0
+deneme1,org.example,RecipeBook,0,120,4,22,0,27,4,14,0,5
+deneme1,org.example,RecipeException,0,4,0,0,0,2,0,1,0,1
+deneme1,org.example,InventoryException,0,4,0,0,0,2,0,1,0,1
+deneme1,org.example,Recipe,7,215,4,20,2,77,3,25,0,16
