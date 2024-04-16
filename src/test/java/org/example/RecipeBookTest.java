@@ -120,12 +120,11 @@ public class RecipeBookTest {
      */
     @Test
     void testAddRecipeToEmptySpot() {
-        // Assuming the recipe book can hold a maximum of 4 recipes based on setup, and none are added initially
-        Assertions.assertTrue(recipeBook.addRecipe(recipeTest1)); // Add first recipe
-        Assertions.assertEquals(recipeTest1, recipeBook.getRecipes()[0]); // Check first recipe is added at the first spot
+        Assertions.assertTrue(recipeBook.addRecipe(recipeTest1)); 
+        Assertions.assertEquals(recipeTest1, recipeBook.getRecipes()[0]); 
 
-        Assertions.assertTrue(recipeBook.addRecipe(recipeTest2)); // Try adding a second, different recipe
-        Assertions.assertEquals(recipeTest2, recipeBook.getRecipes()[1]); // Check second recipe is added at the next empty spot
+        Assertions.assertTrue(recipeBook.addRecipe(recipeTest2)); 
+        Assertions.assertEquals(recipeTest2, recipeBook.getRecipes()[1]); 
     }
 
     /**
@@ -133,16 +132,9 @@ public class RecipeBookTest {
      */
     @Test
     void testSuccessfulDeleteRecipe() {
-        // Add a recipe to ensure the array has at least one recipe.
         recipeBook.addRecipe(recipeTest1);
-
-        // Execute the delete operation on the recipe just added.
         String deletedRecipeName = recipeBook.deleteRecipe(0);
-
-        // Validate the returned name matches the expected deleted recipe's name.
         Assertions.assertEquals("Coffee", deletedRecipeName);
-
-        // Additionally, validate the recipe slot is now null, indicating successful deletion.
         Assertions.assertNull(recipeBook.getRecipes()[0]);
     }
     
